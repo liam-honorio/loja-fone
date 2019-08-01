@@ -1,0 +1,21 @@
+header {
+  background-color: #e24647;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 21px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  float: right;
+}
