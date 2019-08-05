@@ -1,0 +1,49 @@
+.description-product {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  width: 554px;
+  vertical-align: middle;
+}
+
+.description-product > .title {
+  font-size: 25px;
+  margin-bottom: 100px;
+}
+.description-product > .item {
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.description-product > .item.-info {
+  width: 200px;
+  text-align: right;
+}
+
+.description-product > .item.-last {
+  margin-bottom: 72px;
+}
+
+.description-product .contrast {
+  text-transform: uppercase;
+  float: left;
+}
+
+.more {
+  margin-bottom: 26px;
+}
+
+.description-product > .text {
+  margin-bottom: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.description-product > .text.-more {
+  margin-bottom: 98px;
+}
+
+.text .action {
+  text-decoration: none;
+  color: #fff;
+}

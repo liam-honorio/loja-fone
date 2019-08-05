@@ -7,15 +7,26 @@
   box-sizing: border-box;
   width: 200px;
   height: 60px;
-  margin-right: 38px;
+  margin-right: 0;
   text-align: center;
   line-height: 60px;
   text-decoration: none;
+  border: none;
 }
 
-.button-store-second {
+.button-store.-second {
   background-color: transparent;
   line-height: 56px;
   width: 218px;
   border: 2px solid #fff;
+  margin: 38px;
+}
+
+.button-store > button,
+.button-store > a {
+  font-size: inherit;
+  background-color: inherit;
+  border: none;
+  color: inherit;
+  text-decoration: inherit;
 }
