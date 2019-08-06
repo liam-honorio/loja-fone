@@ -28,3 +28,15 @@
   font-size: 21px;
   font-family: "Segoe UI", "Roboto", sans-serif;
 }
+
+.header-store input[type="search"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-family: arial, "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 8px;
+  width: 358px;
+  margin-right: 65px;
+}

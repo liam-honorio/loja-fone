@@ -9,12 +9,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/container-store.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/photo-product.css">
+    <link rel="stylesheet" href="css/header-store.css" />
+    <link rel="stylesheet" href="css/photo-product.css" />
+    <link rel="stylesheet" href="css/wrap-product.css" />
     <link rel="stylesheet" href="css/description-product.css" />
     <link rel="stylesheet" href="css/button-store.css" />
- 
   </head>
 
   <body>
@@ -22,32 +23,47 @@
       <header class="header-store">
         <h1 class="title">Logo</h1>
         <nav class="navigation">
+          <input type="search" placeholder="Buscar" name="" id="" />
           <a class="action" href="https://collabcode.training/">Produtos</a>
           <a class="action" href="https://collabcode.training/">Serviços</a>
           <a class="action" href="https://collabcode.training/">Carrinho(10)</a>
         </nav>
       </header>
-      <figure class="photo-product"><img src="img/f141ef42f115832103688d3f21a84e63.png" alt="Fone de ouvido"></figure>
-      <dl class="description-product">
-        <dt class="title">Fone top, feliz e caro</dt>
-        <dd class="item">4.0 (97)</dd>
-        <dd class="item -info"><strong class="contrast">Frete</strong> C$108</dd>
-        <dd class="item -info -last"><strong class="contrast">Preço</strong> C$340</dd>
-        <dd class="text">
-              Fone TOP com um cor feliz que não tem fio. A cor também é algo que
-              impressiona junto com o seu layout modernão! Ele é caro? É! Mas compre
-              que você não vai se arrepender e se você se arrepender pode vender no
-              mercado livre..kkkk
-        </dd>
-        <dd class="text -more">
-              <a class="action" href="">Saber mais...</a>
-        </dd>
-        <dd class="button-store -second">
-              <button">Adiciona no carrinho</button>
-        </dd>
-        <dd class="button-store"><a href="comprar.html">Comprar</a></dd>
-      </dl>
-      
+      <figure class="photo-product">
+        <img src="img/fone.png" alt="Fone de ouvido" />
+      </figure>
+      <section class="wrap-product">
+        <dl class="description-product">
+          <dt class="title">Fone top, feliz e caro</dt>
+          <dd class="item -star">
+            <img src="img/star-active.png" alt="Estrela" />
+            <img src="img/star-active.png" alt="Estrela" />
+            <img src="img/star-active.png" alt="Estrela" />
+            <img src="img/star-active.png" alt="Estrela" />
+            <img src="img/star.png" alt="Estrela" />
+          </dd>
+          <dd class="item">4.0 (97)</dd>
+          <dd class="item -info">
+            <strong class="contrast">Frete</strong> C$108
+          </dd>
+          <dd class="item -info -last">
+            <strong class="contrast">Preço</strong> C$340
+          </dd>
+          <dd class="text">
+            Fone TOP com um cor feliz que não tem fio. A cor também é algo que
+            impressiona junto com o seu layout modernão! Ele é caro? É! Mas
+            compre que você não vai se arrepender e se você se arrepender pode
+            vender no mercado livre..kkkk
+          </dd>
+          <dd class="text -more">
+            <a class="action" href="">Saber mais...</a>
+          </dd>
+        </dl>
+        <div class="buttons">
+          <button class="button-store -second">Adiciona no carrinho</button>
+          <a class="button-store" href="comprar.html">Comprar</a>
+        </div>
+      </section>
     </div>
   </body>
 </html>

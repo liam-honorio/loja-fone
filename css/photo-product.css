@@ -2,4 +2,8 @@
   background-color: #fff;
   display: inline-block;
   height: 554px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  margin-right: 156px;
+  vertical-align: middle;
 }
