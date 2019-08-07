@@ -12,8 +12,23 @@
   margin-bottom: 28px;
 }
 
+.description-product > .item.-heart {
+  position: absolute;
+  transform: translateX(-100%);
+  left: -47px;
+  top: 9px;
+  cursor: pointer;
+}
+
+.description-product > .item.-heart:hover {
+  transform: translateX(-100%) scale(1.1);
+  left: -47px;
+  top: 9px;
+}
+
 .description-product > .item.-star {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .description-product > .item.-star + .item {
@@ -47,4 +62,8 @@
 .text .action {
   text-decoration: none;
   color: #fff;
+}
+
+.item.-star > .-estrela:hover {
+  transform: scale(1.1);
 }

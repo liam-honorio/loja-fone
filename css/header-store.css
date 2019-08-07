@@ -10,6 +10,7 @@
   font-family: Arial, "Roboto", sans-serif;
   float: left;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .header-store .action {
@@ -39,4 +40,8 @@
   padding: 8px;
   width: 358px;
   margin-right: 65px;
+}
+
+.navigation > .action:hover {
+  text-decoration: underline;
 }
