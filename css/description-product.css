@@ -20,12 +20,6 @@
   cursor: pointer;
 }
 
-.description-product > .item.-heart:hover {
-  transform: translateX(-100%) scale(1.1);
-  left: -47px;
-  top: 9px;
-}
-
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
@@ -64,6 +58,10 @@
   color: #fff;
 }
 
-.item.-star > .-estrela:hover {
+.description-product .icon {
+  transition: transform 100ms linear;
+}
+
+.description-product .icon:hover {
   transform: scale(1.1);
 }

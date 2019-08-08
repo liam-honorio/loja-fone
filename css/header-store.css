@@ -14,10 +14,13 @@
 }
 
 .header-store .action {
+  display: inline-block;
   text-decoration: none;
   font-size: inherit;
   color: inherit;
   margin-right: 60px;
+  padding-bottom: 8px;
+  position: relative;
 }
 
 .header-store .action:last-child {
@@ -30,6 +33,22 @@
   font-family: "Segoe UI", "Roboto", sans-serif;
 }
 
+.header-store .action::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 200ms linear;
+  transform-origin: left;
+}
+
+.header-store .action:hover:after {
+  transform: scale(1);
+}
+
 .header-store input[type="search"] {
   background-color: transparent;
   border: none;
@@ -40,11 +59,5 @@
   padding: 8px;
   width: 358px;
   margin-right: 65px;
-}
-
-.navigation > .action:hover {
-  text-decoration: underline;
-}
-
-teste {
+  vertical-align: bottom;
 }
