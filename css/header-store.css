@@ -62,6 +62,13 @@
   vertical-align: bottom;
 }
 
+@media (max-width: 1310px) {
+  .header-store {
+    padding-right: 60px;
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 1235px) {
   .header-store > .title {
     float: none;
@@ -78,6 +85,7 @@
 @media (max-width: 975px) {
   .header-store {
     padding-left: 30px;
+    padding-right: 30px;
   }
   .header-store input[type="search"] {
     display: none;
@@ -99,6 +107,7 @@
 @media (max-width: 375px) {
   .header-store {
     padding-left: 16px;
+    padding-right: 16px;
   }
 
   .header-store .action {
@@ -107,6 +116,9 @@
 }
 
 @media (max-width: 335px) {
+  .header-store {
+    margin-bottom: 0;
+  }
   .header-store > .navigation {
     display: none;
   }
