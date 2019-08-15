@@ -1,5 +1,5 @@
 const $heart = document.querySelector(".-heart");
 
 $heart.addEventListener("click", () => {
-  console.log("cliquei");
+  $heart.classList.toggle("-active");
 });
