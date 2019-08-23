@@ -21,7 +21,7 @@
 }
 
 .description-product > .item.-active {
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .description-product .star {
@@ -128,5 +128,8 @@
 @media (max-width: 475px) {
   .description-product > .item.-heart {
     position: static;
+  }
+  .description-product > .item.-heart.-active {
+    padding-bottom: 3px;
   }
 }

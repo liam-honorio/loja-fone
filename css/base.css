@@ -1,8 +1,14 @@
 html,
 body {
-  height: 100%;
+  height: 100vh;
 }
 
 body {
   background-image: linear-gradient(to top, #ff2e63, #252a34);
+}
+
+@media (max-width: 355px) {
+  .body {
+    overflow-x: hidden;
+  }
 }

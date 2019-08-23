@@ -18,12 +18,28 @@
   float: right;
 }
 
-.header-store .action {
+.header-store .list {
+  display: inline;
+}
+
+.header-store .item {
   display: inline-block;
-  color: inherit;
-  text-decoration: none;
   margin-right: 60px;
   padding-bottom: 8px;
+}
+
+.header-store .item.-menu {
+  display: none;
+}
+
+.header-store .item.-last {
+  margin-right: 0px;
+}
+
+.header-store .action {
+  color: inherit;
+  text-decoration: none;
+
   position: relative;
 }
 
@@ -42,10 +58,6 @@
 
 .header-store .action:hover:after {
   transform: scale(1);
-}
-
-.header-store .action.-last {
-  margin-right: 0px;
 }
 
 @media (max-width: 1310px) {
@@ -79,33 +91,72 @@
 }
 
 @media (max-width: 545px) {
-  .header-store .action {
+  .header-store .item {
     margin-right: 30px;
   }
 }
 
 @media (max-width: 465px) {
-  .header-store .action {
+  .header-store .item {
     margin-right: 15px;
   }
 }
 
-@media (max-width: 375px) {
-  .header-store {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .header-store .action {
+@media (max-width: 390px) {
+  .header-store .item {
     margin-right: 8px;
   }
 }
 
-@media (max-width: 335px) {
+@media (max-width: 376px) {
   .header-store {
-    margin-bottom: 0;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-  .header-store .action {
-    display: none;
+}
+
+@media (max-width: 355px) {
+  .header-store .item.-menu {
+    display: block;
+    box-sizing: border-box;
+    background: url(../img/menu.svg) no-repeat #fff center;
+    height: 40px;
+    width: 40px;
+    text-indent: -9999px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+    transform: translateX(-100%);
+    transition: transform 400ms 100ms linear;
+  }
+  .header-store .list {
+    background-color: #fff;
+    color: black;
+    width: 100vw;
+    padding: 40px 0 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translateX(100%);
+    transition: transform 300ms linear;
+  }
+
+  .header-store .list.-active {
+    transform: translateX(0);
+  }
+
+  .header-store .list.-active .item.-menu {
+    background-image: url(../img/close.svg);
+    background-size: 65%;
+    transform: translateX(0);
+    transition: none;
+  }
+
+  .header-store .item {
+    display: block;
   }
 }
